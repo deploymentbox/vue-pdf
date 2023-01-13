@@ -6,7 +6,7 @@
 
 	var PDFJS = require('pdfjs-dist-sig/es5/build/pdf.js');
 
-	if ( process.env.VUE_ENV !== 'server' ) {
+	if ( import.meta.env.VUE_ENV !== 'server' ) {
 
 		if ( typeof window !== 'undefined' && 'Worker' in window ) {
 

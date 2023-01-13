@@ -3,7 +3,7 @@
 
 	import componentFactory from './componentFactory.js'
 
-	if ( process.env.VUE_ENV !== 'server' ) {
+	if ( import.meta.env.VUE_ENV !== 'server' ) {
 
 		var pdfjsWrapper = require('./pdfjsWrapper.js').default;
 		var PDFJS = require('pdfjs-dist-sig/es5/build/pdf.js');
